@@ -1,19 +1,28 @@
 # Register Form Challenge
 
 1. What is the difference between state and props?
-##### R/ 
+##### A state is to store data in my current component so we can control the page needs in my controller-view. Props are used to pass data & event handlers down to child components. A state can become a prop if I want.
 2. Props are mutable or inmutable properties? Please explain your answer.
-##### R/
+#####  Props are inmutables. A prop is a state that is managed by the component owner. A component should manage its own state, but it should not manage its own props.
 3. What is Redux?
-##### R/
+##### Is a library that makes  managing the state easy. It helps to manage the data to display and how to respond to the user actions.
 4. How works setState? In what scenario is recommended use?
-##### R/
+##### setState is commonlyused in Hooks. It helps us to set a state of a predefinend variable. 
 5. What is render()? how works?
-##### R/
+##### render() is in charge of transforming the react components into DOM (Document Object Model) nodes so the browser can understand and display them on the screen. In order to decide what to change, React recursively compares the new React Element with the previous one.
 6. What are the main differences between Virtual DOM and Real DOM?
-##### R/
+##### DOM (Document Object Model) is an abstraction of a structured HTML code. Elements of HTML become nodes in the DOM. The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details.
 7. Please show some differences between React ES5 syntax and ES6.
-##### R/
+##### R/ 
+
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
 8. What is a component in React and how works?
 ##### R/
 9. How you can update the state of a component?
