@@ -13,16 +13,63 @@
 6. What are the main differences between Virtual DOM and Real DOM?
 ##### DOM (Document Object Model) is an abstraction of a structured HTML code. Elements of HTML become nodes in the DOM. The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details.
 7. Please show some differences between React ES5 syntax and ES6.
-##### R/ 
-
+##### R/
+### Arrow Functions
+ES5
 ``` js
-var foo = function (bar) {
-  return bar++;
-};
-
-console.log(foo(5));
+function greetings (name) {
+ return 'hello ' + name
+}
 ```
-
+ES6
+``` js
+const greetings = (name) => {
+ return `hello ${name}`;
+}
+```
+### Working with Objects
+ES5
+``` js
+var obj1 = { a: 1, b: 2 }
+var obj2 = { a: 2, c: 3, d: 4}
+var obj3 = Object.assign(obj1, obj2)
+```
+ES6
+``` js
+const obj1 = { a: 1, b: 2 }
+const obj2 = { a: 2, c: 3, d: 4}
+const obj3 = {...obj1, ...obj2}
+```
+### Object destructuring
+ES5
+``` js
+var obj1 = { a: 1, b: 2, c: 3, d: 4 }
+var a = obj1.a
+var b = obj1.b
+var c = obj1.c
+var d = obj1.d
+```
+ES6
+``` js
+const obj1 = { a: 1, b: 2, c: 3, d: 4 }
+const {
+  a,
+  b,
+  c,
+  d
+} = obj1
+```
+### Import and Export modules
+``` js
+var myModule = { x: 1, y: function(){ console.log('This is ES5') }}
+module.exports = myModule;
+```
+ES6
+``` js
+const myModule = { x: 1, y: () => { console.log('This is ES5') }}
+export default myModule;
+```
+Among others...
 8. What is a component in React and how works?
 ##### R/
 9. How you can update the state of a component?
