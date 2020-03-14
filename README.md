@@ -1,19 +1,20 @@
 # Register Form Challenge
 
-1. What is the difference between state and props?
-##### A state is to store data in my current component so we can control the page needs in my controller-view. Props are used to pass data & event handlers down to child components. A state can become a prop if I want.
-2. Props are mutable or inmutable properties? Please explain your answer.
-#####  Props are inmutables. A prop is a state that is managed by the component owner. A component should manage its own state, but it should not manage its own props.
-3. What is Redux?
-##### Is a library that makes  managing the state easy. It helps to manage the data to display and how to respond to the user actions.
-4. How works setState? In what scenario is recommended use?
-##### setState is commonlyused in Hooks. It helps us to set a state of a predefinend variable. 
-5. What is render()? how works?
-##### render() is in charge of transforming the react components into DOM (Document Object Model) nodes so the browser can understand and display them on the screen. In order to decide what to change, React recursively compares the new React Element with the previous one.
-6. What are the main differences between Virtual DOM and Real DOM?
-##### DOM (Document Object Model) is an abstraction of a structured HTML code. Elements of HTML become nodes in the DOM. The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details.
-7. Please show some differences between React ES5 syntax and ES6.
-##### R/
+#### 1. What is the difference between state and props?
+```A state is to store data in my current component so we can control the page needs in my controller-view. Props are used to pass data & event handlers down to child components. A state can become a prop if I want```
+#### 2. Props are mutable or inmutable properties? Please explain your answer.
+```Props are inmutables. A prop is a state that is managed by the component owner. A component should manage its own state, but it should not manage its own props.```
+#### 3. What is Redux?
+```Its a library that makes  managing the state easy. It helps to manage the data to display and how to respond to the user actions.```
+#### 4. How works setState? In what scenario is recommended use?
+```setState is commonlyused in Hooks. It helps us to set a state of a predefinend variable.```
+
+#### 5. What is render()? how works?
+```render() is in charge of transforming the react components into DOM (Document Object Model) nodes so the browser can understand and display them on the screen. In order to decide what to change, React recursively compares the new React Element with the previous one```
+
+#### 6. What are the main differences between Virtual DOM and Real DOM?
+```DOM (Document Object Model) is an abstraction of a structured HTML code. Elements of HTML become nodes in the DOM. The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details.```
+#### 7. Please show some differences between React ES5 syntax and ES6.
 ### Arrow Functions
 ES5
 ``` js
@@ -70,12 +71,13 @@ const myModule = { x: 1, y: () => { console.log('This is ES5') }}
 export default myModule;
 ```
 Among others...
-8. What is a component in React and how works?
-##### R/
-9. How you can update the state of a component?
-##### R/
-10. In your trajectory using React.js, what has been the biggest challenge you have faced? How did you face it?
-##### R/
+#### 8. What is a component in React and how works?
+``` I like to think about components as blocks in my website than can behave independently. Then a bunch of blocks togheter can create a cool website. A component can recesive props from parent components, they also have state which allows us to store data from itsself. ```
+#### 9. How you can update the state of a component?
+``` If the component is a "fucntional component" we can une useState "const [state, setState] = useState(initialState)```
+``` In class components you use setState(newState)```
+#### 10. In your trajectory using React.js, what has been the biggest challenge you have faced? How did you face it?
+```I think the biggest chanllenge so far has been undestarnding the react ecosystem, all those packages that have to be an specific version so everything works right, then those that get deprecated but then you cant use the latelatest because your code doesnt work with it. How do I face those problems? I'm just giving it time, the learning curve is bigger everytime solving things step by step.```
 
 ## Challenge
 
